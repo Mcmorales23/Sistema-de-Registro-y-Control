@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Documentos</title>
+    <link rel="stylesheet" href="estilos_consulta_documento.css">
+</head>
+<body>
+    <header>
+        <h1>Consultar documento</h1>
+    </header>
+    <div class="circle-image">
+        <img src="Blue White and Black Modern Technology Logo.png" alt="Imagen Circular">
+    </div>
+    <div class="container">
+        <form action="#" method="post">
+            <label for="tipo_documento">Tipo de Documento:</label>
+            <select id="tipo_documento" name="tipo_documento" required>
+                <option value="cedula">Cédula</option>
+                <option value="pasaporte">Pasaporte</option>
+                <option value="dni">DNI</option>
+            </select>
+
+            <label for="numero_documento">Número de Documento:</label>
+            <input type="text" id="numero_documento" name="numero_documento" required>
+
+            <button type="submit">Consultar</button>
+
+            <div class="actions">
+                <button type="button" class="registrar-visitante-button" onclick="registrarVisitante()">Registrar Visitante</button>
+                <button type="button" class="registrar-residente-button" onclick="registrarResidente()">Registrar Residente</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function registrarResidente() {
+            // Agregar aquí la lógica para redirigir a la página de registro de residentes
+            window.location.href = "registrar_residente.html";
+        }
+
+        function registrarVisitante() {
+            // Agregar aquí la lógica para redirigir a la página de registro de visitantes
+            window.location.href = "registrar_visitante.html";
+        }
+    </script>
+</body>
+</html>

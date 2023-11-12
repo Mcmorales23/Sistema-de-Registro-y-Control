@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperación de Contraseña</title>
+    <link rel="stylesheet" href="estilos_restablecer_contraseña.css">
+</head>
+<body>
+    <header>
+        <h1>¿Olvido su contraseña?</h1>
+      </header>
+    <div class="circle-image">
+        <img src="Blue White and Black Modern Technology Logo.png" alt="Imagen Circular">
+    </div>
+    <div class="container">
+        <form action="#" method="post">
+            <label for="tipo_identificacion">Tipo de Identificación:</label>
+            <select id="tipo_identificacion" name="tipo_identificacion" required>
+                <option value="cedula">Cédula</option>
+                <option value="pasaporte">Pasaporte</option>
+                <option value="dni">DNI</option>
+                <!-- Agrega más opciones según sea necesario -->
+            </select>
+
+            <label for="numero_identidad">Número de Identidad:</label>
+            <input type="text" id="numero_identidad" name="numero_identidad" required>
+
+            <button type="submit" onclick="redirectToSubmitPage()">Restablecer</button>
+        </form>
+    </div>
+    <script>
+        function redirectToSubmitPage() {
+          window.location.href = "menu_principal.html";
+    }
+    </script>
+</body>
+</html>

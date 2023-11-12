@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #247394;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    border: 3px solid black;
+    border-radius: 5px;
+    margin-top: 80px;
+    margin-left: 300px;
+    float: left;
+}
+
+.circle-image {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 50px;
+    margin-right: 300px;
+    float: right;
+    max-width: 200%;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+select,
+input {
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.consultar-button {
+    background-color: #4CAF50; 
+    color: white;
+    border: 3px solid black;
+    border-radius: 3px;
+}
+
+.registrar-visitante-button {
+    background-color: #2196F3; 
+    color: black;
+    border: 3px solid black;
+    border-radius: 3px;
+}
+
+.registrar-residente-button {
+    background-color: #2196F3; 
+    color: black;
+    border: 3px solid black;
+    border-radius: 3px;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.circle-image {
+    width: 300px; 
+    height: 300px; 
+    border-radius: 50%; 
+    overflow: hidden; 
+  }
+  
+  .circle-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
